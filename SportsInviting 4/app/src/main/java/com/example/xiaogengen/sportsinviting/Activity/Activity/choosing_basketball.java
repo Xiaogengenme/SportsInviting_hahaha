@@ -24,7 +24,7 @@ public class choosing_basketball extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent=new Intent(choosing_basketball.this,ChooseFriendsToInviteActivity.class);
+                Intent intent=new Intent(choosing_basketball.this,MapTestActivity.class);
                 startActivity(intent);
             }
         });

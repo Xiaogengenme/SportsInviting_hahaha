@@ -22,9 +22,9 @@ public class FunctionActivity extends AppCompatActivity {
         btn.setOnClickListener(new BtnClickListener());
         btn1=(ImageButton)findViewById(R.id.imageButton_basketball);
         btn1.setOnClickListener(new BtnClickListener());
-        btn2=(ImageButton) findViewById(R.id.imageButton_tabletennis);
+        btn2=(ImageButton) findViewById(R.id.imageButton_other);
         btn2.setOnClickListener(new BtnClickListener());
-        btn3=(ImageButton) findViewById(R.id.imageButton_tennis);
+        btn3=(ImageButton) findViewById(R.id.imageButton_pingpang);
         btn3.setOnClickListener(new BtnClickListener());
         //btn4=(ImageButton) findViewById(R.id.imageButton4);
        // btn4.setOnClickListener(new BtnClickListener());
@@ -37,11 +37,11 @@ public class FunctionActivity extends AppCompatActivity {
                     Intent intent=new Intent(FunctionActivity.this,MeActivity.class);
                     startActivity(intent);
                     break;
-                case R.id.imageButton_tabletennis:
+                case R.id.imageButton_pingpang:
                     Intent intent1=new Intent(FunctionActivity.this,choosing_pingpang.class);
                     startActivity(intent1);
                     break;
-                case R.id.imageButton_tennis:
+                case R.id.imageButton_other:
                     Intent intent2=new Intent(FunctionActivity.this,Choosing_tennis.class);
                     startActivity(intent2);
                     break;
