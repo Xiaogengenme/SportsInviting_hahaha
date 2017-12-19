@@ -18,6 +18,8 @@ public class FunctionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_function);
 
 
+        btn=(Button)findViewById(R.id.button10);
+        btn.setOnClickListener(new BtnClickListener());
         btn=(Button)findViewById(R.id.button13);
         btn.setOnClickListener(new BtnClickListener());
         btn1=(ImageButton)findViewById(R.id.imageButton_basketball);
@@ -34,7 +36,7 @@ public class FunctionActivity extends AppCompatActivity {
         public void onClick(View v){
             switch (v.getId()){
                 case R.id.button13:
-                    Intent intent=new Intent(FunctionActivity.this,MeActivity.class);
+                    Intent intent=new Intent(FunctionActivity.this,MainActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.imageButton_pingpang:

@@ -1,13 +1,9 @@
-package com.example.xiaogengen.sportsinviting.Activity.Activity;
+package com.example.xiaogengen.momentstest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
-import com.example.xiaogengen.sportsinviting.Activity.Adapter.MomentAdapter;
-import com.example.xiaogengen.sportsinviting.Activity.Class.Moment;
-import com.example.xiaogengen.sportsinviting.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initMoments(){
-        Moment Tom=new Moment("Tom",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
-        moments.add(Tom);
+       Moment Tom=new Moment("Tom",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
+       moments.add(Tom);
         Moment Jerry=new Moment("Jerry",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
         moments.add(Jerry);
         Moment Kanye=new Moment("Kanye",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
