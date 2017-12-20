@@ -8,32 +8,38 @@ import android.view.View;
 import android.widget.Button;
 
 public class MeActivity extends AppCompatActivity {
-private Button btn;
+    private Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_me);
         Button sentInvatation = (Button) findViewById(R.id.sentInvatation);
         Button recivedInvatation = (Button) findViewById(R.id.recivedInvatation);
+        Button friendlist=(Button)findViewById(R.id.friendslist);
+        friendlist.setOnClickListener(new BtnClickListener());
         sentInvatation.setOnClickListener(new BtnClickListener());
         recivedInvatation.setOnClickListener(new BtnClickListener());
     }
-        class BtnClickListener implements View.OnClickListener {
-            public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.sentInvatation:
-                        Intent intent1 = new Intent(MeActivity.this, InviteHistoryActivity.class);
-                        startActivity(intent1);
-                        break;
-                    case R.id.recivedInvatation:
-                        Intent intent2 = new Intent(MeActivity.this, ChatHistoryActivity.class);
-                        startActivity(intent2);
-                        break;
+    class BtnClickListener implements View.OnClickListener {
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.sentInvatation:
+                    Intent intent1 = new Intent(MeActivity.this, InviteHistoryActivity.class);
+                    startActivity(intent1);
+                    break;
+                case R.id.recivedInvatation:
+                    Intent intent2 = new Intent(MeActivity.this, ChatHistoryActivity.class);
+                    startActivity(intent2);
+                    break;
+                case R.id.friendslist:
+                    Intent intent3=new Intent(MeActivity.this,MyFriendsListActivity.class);
+                    startActivity(intent3);
+                    break;
 
-                }
             }
-
         }
+
+    }
 
 
 }

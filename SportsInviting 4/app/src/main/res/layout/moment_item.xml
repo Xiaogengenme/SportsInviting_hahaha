@@ -3,88 +3,98 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
->
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/friend_head_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/friend_name"
-        android:layout_width="90dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/friend_head_image"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/friend_moment_image"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="128dp"
-        android:src="@drawable/moment_pic1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">>
 
-    <TextView
-        android:id="@+id/friend_moment_content"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="92dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@+id/imageButton_like"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/like"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton_dingwei"
+                app:layout_constraintHorizontal_bias="0.532"
+                app:layout_constraintStart_toEndOf="@+id/imageButton_comment"
+                app:layout_constraintTop_toBottomOf="@+id/friend_moment_image"
+                app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageButton
-        android:id="@+id/imageButton_dingwei"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/dingwei"
-        app:layout_constraintTop_toBottomOf="@+id/friend_moment_image"
-        app:srcCompat="@mipmap/ic_launcher" />
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="90dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/friend_head_image"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton_comment"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/comment"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/friend_moment_image"
-        app:srcCompat="@mipmap/ic_launcher" />
+            <ImageButton
+                android:id="@+id/imageButton_comment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="100dp"
+                android:src="@drawable/comment"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                app:layout_constraintTop_toBottomOf="@+id/friend_moment_image"
+                app:srcCompat="@mipmap/ic_launcher" />
 
-    <ImageButton
-        android:id="@+id/imageButton_like"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/like"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton_dingwei"
-        app:layout_constraintStart_toEndOf="@+id/imageButton_comment"
-        app:layout_constraintTop_toBottomOf="@+id/friend_moment_image"
-        app:srcCompat="@mipmap/ic_launcher" />
+            <ImageButton
+                android:id="@+id/imageButton_dingwei"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/dingwei"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/friend_moment_image"
+                app:srcCompat="@mipmap/ic_launcher" />
 
+            <ImageView
+                android:id="@+id/friend_head_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/friend_moment_image"
+                android:layout_width="375dp"
+                android:layout_height="430dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="116dp"
+                android:src="@drawable/moment_pic1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/friend_moment_content"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="92dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
 </android.support.constraint.ConstraintLayout>

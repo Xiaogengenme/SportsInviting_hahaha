@@ -24,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
 
         Button buttonRegister=(Button)findViewById(R.id.button2);
         Button buttonLogin=(Button)findViewById(R.id.button);
-        //  Button buttonLinshi=(Button)findViewById(R.id.button6);
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

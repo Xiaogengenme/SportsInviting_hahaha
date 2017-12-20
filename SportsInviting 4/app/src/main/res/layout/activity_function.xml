@@ -8,45 +8,47 @@
 
     <ImageButton
         android:id="@+id/imageButton_basketball"
-        android:layout_width="match_parent"
-        android:layout_height="215dp"
+        android:layout_width="375dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:src="@drawable/basketballfunction"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/basketballfunction3"
         app:layout_constraintBottom_toTopOf="@+id/imageButton_other"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_pingpang" />
 
     <ImageButton
         android:id="@+id/imageButton_pingpang"
-        android:layout_width="match_parent"
-        android:layout_height="215dp"
+        android:layout_width="375dp"
+        android:layout_height="195dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
-        android:src="@drawable/ppf"
+        android:src="@drawable/ppf3"
         app:layout_constraintBottom_toTopOf="@+id/imageButton_basketball"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton_other"
-        android:layout_width="400dp"
-        android:layout_height="201dp"
+        android:layout_width="375dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/othergymsearch"
+        android:src="@drawable/other3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton_basketball" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
@@ -62,8 +64,7 @@
             android:layout_weight="1"
             android:background="#ff6347"
             android:text="好友动态"
-            android:textColor="#ffffff"
-            />
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/button12"
@@ -83,7 +84,6 @@
             android:layout_weight="1"
             android:background="#ff6347"
             android:text="个人资料"
-            android:textColor="#ffffff"
-            />
+            android:textColor="#ffffff" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

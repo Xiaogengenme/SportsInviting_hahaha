@@ -174,13 +174,16 @@
         android:text="李直根XGG"
         android:textColor="#030303"
         android:textSize="15dp" />
+
     <ImageButton
         android:id="@+id/photo"
-        android:src="@drawable/a7"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addfriends"
+        android:layout_alignStart="@+id/addfriends"
+        android:layout_below="@+id/headshot2"
         android:background="#00000000"
         android:scaleType="centerInside"
-        android:layout_below="@+id/headshot2" />
+        android:src="@drawable/kobe" />
 
 </RelativeLayout>

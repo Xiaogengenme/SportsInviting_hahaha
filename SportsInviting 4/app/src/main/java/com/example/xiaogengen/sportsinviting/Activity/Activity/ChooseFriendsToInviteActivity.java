@@ -39,7 +39,9 @@ public class ChooseFriendsToInviteActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-    }class BtnClickListener2 implements View.OnClickListener{
+    }
+
+    class BtnClickListener2 implements View.OnClickListener{
         public void onClick(View v){
             Intent intent=new Intent(ChooseFriendsToInviteActivity.this,InvitationActivity.class);
             startActivity(intent);

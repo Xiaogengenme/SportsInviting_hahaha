@@ -12,6 +12,8 @@ import com.example.xiaogengen.sportsinviting.R;
 
 public class GuideActivity extends AppCompatActivity {
 
+    private Button btn_start_WO;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,9 +22,21 @@ public class GuideActivity extends AppCompatActivity {
         MapView mapView = (MapView) findViewById(R.id.map);
         mapView.onCreate(savedInstanceState);// 此方法必须重写
         AMap aMap = mapView.getMap();
-       // Button buttonToFriendsList=(Button)findViewById(R.id.button_Go2);
+        // Button buttonToFriendsList=(Button)findViewById(R.id.button_Go2);
 
+        btn_start_WO = (Button) findViewById(R.id.button_Go2);
+        btn_start_WO.setOnClickListener(new BtnClickListener_go());
 
 
     }
+
+
+    class BtnClickListener_go implements View.OnClickListener {
+        public void onClick(View v) {
+            Intent intent = new Intent(GuideActivity.this, WorkOutActivity.class);
+            startActivity(intent);
+        }
+    }
 }
+
+

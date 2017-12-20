@@ -50,7 +50,10 @@
         <activity android:name=".Activity.Activity.InviteHistoryActivity" />
         <activity android:name=".Activity.Activity.MyFriendsListActivity" />
         <activity android:name=".Activity.Activity.MapTestActivity" />
-        <activity android:name=".Activity.Activity.GuideActivity"></activity>
+        <activity android:name=".Activity.Activity.GuideActivity" />
+        <!-- activity<activity android:name=".Activity.Activity.LoginActivity"></activity> -->
+
+        <activity android:name=".Activity.Activity.WorkOutActivity"></activity>
     </application>
 
 </manifest>

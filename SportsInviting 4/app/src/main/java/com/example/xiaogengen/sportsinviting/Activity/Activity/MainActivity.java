@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
     private void initMoments(){
         Moment Tom=new Moment("Tom",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
         moments.add(Tom);
-        Moment Jerry=new Moment("Jerry",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
+        Moment Jerry=new Moment("Jerry",R.drawable.head2,R.drawable.picture2,"dajidalicaonimabi");
         moments.add(Jerry);
-        Moment Kanye=new Moment("Kanye",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
+        Moment Kanye=new Moment("Kanye",R.drawable.head3,R.drawable.picture3,"dajidalicaonimabi");
         moments.add(Kanye);
-        Moment Jordan=new Moment("Jordan",R.drawable.head1,R.drawable.picture1,"dajidalicaonimabi");
+        Moment Jordan=new Moment("Jordan",R.drawable.head4,R.drawable.picture4,"dajidalicaonimabi");
         moments.add(Jordan);
     }
 
